@@ -64,13 +64,6 @@ public class MainActivity extends AppCompatActivity implements CityDialogFragmen
         db = FirebaseFirestore.getInstance();
         citiesRef = db.collection("cities");
 
-        // Add initial Canadian data ONLY if the collection is empty
-        citiesRef.get().addOnSuccessListener(snapshot -> {
-            if (snapshot.isEmpty()) {
-                addInitialData();
-            }
-        });
-
         // Set up snapshot listener to sync with Firestore
         citiesRef.addSnapshotListener((QuerySnapshot value, FirebaseFirestoreException error) -> {
             if (error != null) {
@@ -114,16 +107,6 @@ public class MainActivity extends AppCompatActivity implements CityDialogFragmen
         });
     }
 
-    private void addInitialData() {
-        String[][] initialData = {
-
-        };
-
-        for (String[] dataPair : initialData) {
-            City city = new City(dataPair[0], dataPair[1]);
-            addCity(city);
-        }
-    }
 
     @Override
     public void updateCity(City city, String title, String year) {
