@@ -4,3 +4,5 @@ ListyCity/app/google-services.json
 google-services.json
 ListyCity/app/google-services.json
 google-services.json
+.DS_Store
+.idea/
