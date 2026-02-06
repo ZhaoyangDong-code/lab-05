@@ -2,8 +2,8 @@
 
 ## Student Details
 
-- **Full Name:** `<Zhaoyang Dong>`
-- **CCID:** `<zhaoyan7>`
+- **Full Name:** `Zhaoyang Dong`
+- **CCID:** `zhaoyan7`
 
 ## References and Resources
 
@@ -13,5 +13,5 @@
 
 | Student Name | CCID     |
 | ------------ | -------- |
-| `<Zhaoyang Dong>` | `<zhaoyan7>` |
-| `<N/A>` | `<N/A>` |
+| `Zhaoyang Dong` | `zhaoyan7` |
+| `N/A` | `N/A` |
