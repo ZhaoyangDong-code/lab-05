@@ -13,5 +13,4 @@
 
 | Student Name | CCID     |
 | ------------ | -------- |
-| `Zhaoyang Dong` | `zhaoyan7` |
 | `N/A` | `N/A` |
