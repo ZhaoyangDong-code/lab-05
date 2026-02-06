@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -38,6 +38,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:34.8.0"))
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation("com.google.firebase:firebase-analytics")
+    // Add the dependency for the Cloud Firestore library
+    implementation("com.google.firebase:firebase-firestore")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
